@@ -1508,16 +1508,23 @@
       });
     }
 
+    // *** WICHTIGER FIX: Nur aktuelle Tages-Tür offen ***
     function updateDoorLockStates() {
       doorEntries.forEach(({ door, liveDate }) => {
         if (testMode) {
           door.classList.remove("locked");
+          return;
+        }
+
+        const sameDay =
+          today.getFullYear() === liveDate.getFullYear() &&
+          today.getMonth() === liveDate.getMonth() &&
+          today.getDate() === liveDate.getDate();
+
+        if (sameDay) {
+          door.classList.remove("locked");
         } else {
-          if (today < liveDate) {
-            door.classList.add("locked");
-          } else {
-            door.classList.remove("locked");
-          }
+          door.classList.add("locked");
         }
       });
     }
