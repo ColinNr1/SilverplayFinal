@@ -780,176 +780,33 @@
     ];
 
     /* ---------------- Angebote EN ---------------- */
-    const offersEn = [
-      {
-        day: 1,
-        title: "Day 1",
-        quote: "",
-        bodyHtml: `<p>20 Free Spins</p>`,
-        emailText: "20 Free Spins"
-      },
-      {
-        day: 2,
-        title: "Day 2",
-        quote: "",
-        bodyHtml: `<p>Mission:<br>Wager €500 on any slot → Receive €50 bonus</p>`,
-        emailText: "Mission: Wager €500 → Get €50"
-      },
-      {
-        day: 3,
-        title: "Day 3",
-        quote: "",
-        bodyHtml: `<p>30% Bonus on your first deposit today (up to €200)</p>`,
-        emailText: "30% bonus on the first deposit today"
-      },
-      {
-        day: 4,
-        title: "Day 4",
-        quote: "",
-        bodyHtml: `<p>10% Daily Net-Loss Cashback</p>`,
-        emailText: "10% daily cashback"
-      },
-      {
-        day: 5,
-        title: "Day 5",
-        quote: "",
-        bodyHtml: `<p>Raffle Day<br>Every €20 deposit = 1 Ticket</p>`,
-        emailText: "Raffle Day – 1 ticket per €20 deposit"
-      },
-      {
-        day: 6,
-        title: "Day 6",
-        quote: "",
-        bodyHtml: `<p>Cashback Booster<br>All deposits today count 25% extra toward your daily cashback calculation.</p>`,
-        emailText: "Cashback Booster Day"
-      },
-      {
-        day: 7,
-        title: "Day 7",
-        quote: "",
-        bodyHtml: `<p>Double Raffle Tickets<br>Every €20 deposit = 2 tickets today</p>`,
-        emailText: "Double Raffle Tickets Day"
-      },
-      {
-        day: 8,
-        title: "Day 8",
-        quote: "",
-        bodyHtml: `<p>50% Reload Bonus up to €500 on your first deposit of the day</p>`,
-        emailText: "50% reload bonus"
-      },
-      {
-        day: 9,
-        title: "Day 9",
-        quote: "",
-        bodyHtml: `<p>Tiered Deposit Bonus Day:<br>• Deposit €500 – Get €75 Bonus<br>• Deposit €1,000 – Get €200 Bonus<br>• Deposit €2,000 – Get €500 Bonus</p>`,
-        emailText: "Tiered Deposit Bonus Day"
-      },
-      {
-        day: 10,
-        title: "Day 10",
-        quote: "",
-        bodyHtml: `<p>50 Free Spins on any Christmas-themed slot</p>`,
-        emailText: "50 Free Spins"
-      },
-      {
-        day: 11,
-        title: "Day 11",
-        quote: "",
-        bodyHtml: `<p>15% Daily Net-Loss Cashback</p>`,
-        emailText: "15% cashback"
-      },
-      {
-        day: 12,
-        title: "Day 12",
-        quote: "",
-        bodyHtml: `<p>Weekend Tournament Point Campaign<br>Every €50 deposit = +10 Points</p>`,
-        emailText: "Weekend Tournament Point Campaign"
-      },
-      {
-        day: 13,
-        title: "Day 13",
-        quote: "",
-        bodyHtml: `<p>Claim your +5 Points for the Weekend Tournament Campaign</p>`,
-        emailText: "+5 Tournament Points"
-      },
-      {
-        day: 14,
-        title: "Day 14",
-        quote: "",
-        bodyHtml: `<p>10% Insurance on all deposits today</p>`,
-        emailText: "10% Insurance Day"
-      },
-      {
-        day: 15,
-        title: "Day 15",
-        quote: "",
-        bodyHtml: `<p>Two Bonuses Today:<br>• 1st deposit → 30% Bonus<br>• 2nd deposit → 20% Bonus</p>`,
-        emailText: "30% + 20% dual bonus day"
-      },
-      {
-        day: 16,
-        title: "Day 16",
-        quote: "",
-        bodyHtml: `<p>€50 Bonus / Free Bet</p>`,
-        emailText: "€50 Bonus / Free Bet"
-      },
-      {
-        day: 17,
-        title: "Day 17",
-        quote: "",
-        bodyHtml: `<p>Mission:<br>Wager €1000 today → Receive a €100 Bonus</p>`,
-        emailText: "Mission: Wager €1000 → Get €100"
-      },
-      {
-        day: 18,
-        title: "Day 18",
-        quote: "",
-        bodyHtml: `<p>20% Deposit Insurance<br>If today goes negative, you receive a 20% compensation.</p>`,
-        emailText: "20% Deposit Insurance"
-      },
-      {
-        day: 19,
-        title: "Day 19",
-        quote: "",
-        bodyHtml: `<p>Leaderboard Race (Fri–Sun)<br>High-score tournament for cash rewards</p>`,
-        emailText: "Weekend leaderboard race"
-      },
-      {
-        day: 20,
-        title: "Day 20",
-        quote: "",
-        bodyHtml: `<p>Tournament Points x2 Day<br>Everything you play today rewards double points</p>`,
-        emailText: "Tournament Points ×2"
-      },
-      {
-        day: 21,
-        title: "Day 21",
-        quote: "",
-        bodyHtml: `<p>Tournament Points x2 Day<br>Every deposit today counts double for tournament progression</p>`,
-        emailText: "Tournament Points ×2 (Deposits)"
-      },
-      {
-        day: 22,
-        title: "Day 22",
-        quote: "",
-        bodyHtml: `<p>50% Bonus on your second deposit of the day</p>`,
-        emailText: "50% second-deposit bonus"
-      },
-      {
-        day: 23,
-        title: "Day 23",
-        quote: "",
-        bodyHtml: `<p>Deposit at least €200 today and your cashback segment increases by one tier for the entire weekend.</p>`,
-        emailText: "Cashback Tier Upgrade Day"
-      },
-      {
-        day: 24,
-        title: "Day 24",
-        quote: "",
-        bodyHtml: `<p>Send a picture of you wearing a Christmas sweater and receive a bonus of up to 300€! </p>`,
-        emailText: "Christmas Sweater → 300"
-      }
-    ];
+   const offersEn = [
+ {day:1,title:"Day 1",quote:"",bodyHtml:`<p>20 Free Spins</p>`,emailText:"20 Free Spins"},
+ {day:2,title:"Day 2",quote:"",bodyHtml:`<p>Mission:<br>Wager €500 → Get €50 Bonus</p>`,emailText:"€500 → €50"},
+ {day:3,title:"Day 3",quote:"",bodyHtml:`<p>30% Bonus on your first deposit (up to €200)</p>`,emailText:"30% Bonus"},
+ {day:4,title:"Day 4",quote:"",bodyHtml:`<p>10% Daily Net-Loss Cashback</p>`,emailText:"10% Cashback"},
+ {day:5,title:"Day 5",quote:"",bodyHtml:`<p>Raffle Day – €20 = 1 Ticket</p>`,emailText:"Raffle Day"},
+ {day:6,title:"Day 6",quote:"",bodyHtml:`<p>€20 Bonus</p>`,emailText:"€20 Bonus"},
+ {day:7,title:"Day 7",quote:"",bodyHtml:`<p>20 Free Spins – Book of Dead</p>`,emailText:"20 FS Book of Dead"},
+ {day:8,title:"Day 8",quote:"",bodyHtml:`<p>50% Bonus on your deposit</p>`,emailText:"50% Bonus"},
+ {day:9,title:"Day 9",quote:"",bodyHtml:`<p>10 Free Spins – Gates of Olympus</p>`,emailText:"10 FS Gates"},
+ {day:10,title:"Day 10",quote:"",bodyHtml:`<p>€10 Bonus</p>`,emailText:"€10 Bonus"},
+ {day:11,title:"Day 11",quote:"",bodyHtml:`<p>Raffle Day</p>`,emailText:"Raffle Day"},
+ {day:12,title:"Day 12",quote:"",bodyHtml:`<p>20 Free Spins – Sweet Bonanza</p>`,emailText:"20 FS Sweet Bonanza"},
+ {day:13,title:"Day 13",quote:"",bodyHtml:`<p>30% Bonus</p>`,emailText:"30% Bonus"},
+ {day:14,title:"Day 14",quote:"",bodyHtml:`<p>10% Cashback</p>`,emailText:"10% Cashback"},
+ {day:15,title:"Day 15",quote:"",bodyHtml:`<p>20 Free Spins – Big Bass Bonanza</p>`,emailText:"20 FS Big Bass"},
+ {day:16,title:"Day 16",quote:"",bodyHtml:`<p>€10 Bonus</p>`,emailText:"€10 Bonus"},
+ {day:17,title:"Day 17",quote:"",bodyHtml:`<p>10 Free Spins – The Dog House</p>`,emailText:"10 FS Dog House"},
+ {day:18,title:"Day 18",quote:"",bodyHtml:`<p>50% Bonus</p>`,emailText:"50% Bonus"},
+ {day:19,title:"Day 19",quote:"",bodyHtml:`<p>20 Free Spins – Legacy of Dead</p>`,emailText:"20 FS Legacy"},
+ {day:20,title:"Day 20",quote:"",bodyHtml:`<p>Raffle Day</p>`,emailText:"Raffle Day"},
+ {day:21,title:"Day 21",quote:"",bodyHtml:`<p>€20 Bonus</p>`,emailText:"€20 Bonus"},
+ {day:22,title:"Day 22",quote:"",bodyHtml:`<p>20 Free Spins – Gates of Olympus</p>`,emailText:"20 FS Gates"},
+ {day:23,title:"Day 23",quote:"",bodyHtml:`<p>30% Bonus</p>`,emailText:"30% Bonus"},
+ {day:24,title:"Day 24",quote:"",bodyHtml:`<p>Christmas Sweater Photo → Bonus up to €300</p>`,emailText:"Christmas Sweater → 300€"}
+];
+
 
     /* ---------------- Angebote ES ---------------- */
     const offersEs = [
