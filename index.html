@@ -838,176 +838,32 @@
 
 
     /* ---------------- Angebote IT ---------------- */
-    const offersIt = [
-      {
-        day: 1,
-        title: "Giorno 1",
-        quote: "",
-        bodyHtml: `<p>20 Giri Gratis</p>`,
-        emailText: "20 giri gratis"
-      },
-      {
-        day: 2,
-        title: "Giorno 2",
-        quote: "",
-        bodyHtml: `<p>Missione:<br>Scommetti €500 su qualsiasi slot → Ricevi un Bonus di €50</p>`,
-        emailText: "Missione: scommetti €500 → bonus €50"
-      },
-      {
-        day: 3,
-        title: "Giorno 3",
-        quote: "",
-        bodyHtml: `<p>Bonus del 30% sul tuo primo deposito di oggi (fino a €500)</p>`,
-        emailText: "Bonus 30% sul primo deposito"
-      },
-      {
-        day: 4,
-        title: "Giorno 4",
-        quote: "",
-        bodyHtml: `<p>10% di cashback giornaliero sulle perdite nette</p>`,
-        emailText: "Cashback giornaliero 10%"
-      },
-      {
-        day: 5,
-        title: "Giorno 5",
-        quote: "",
-        bodyHtml: `<p>Giorno della Riffa<br>Ogni deposito di €20 = 1 biglietto per la Grande Estrazione del Weekend<br>Premio accreditato lunedì.</p>`,
-        emailText: "Giorno della riffa – 1 biglietto ogni €20"
-      },
-      {
-        day: 6,
-        title: "Giorno 6",
-        quote: "",
-        bodyHtml: `<p>Cashback Booster<br>Tutti i depositi di oggi valgono il 25% in più per il tuo cashback settimanale.</p>`,
-        emailText: "Cashback Booster"
-      },
-      {
-        day: 7,
-        title: "Giorno 7",
-        quote: "",
-        bodyHtml: `<p>Biglietti della riffa raddoppiati<br>Deposito di €20 = 2 biglietti</p>`,
-        emailText: "Biglietti della riffa raddoppiati"
-      },
-      {
-        day: 8,
-        title: "Giorno 8",
-        quote: "",
-        bodyHtml: `<p>Bonus di ricarica del 50% fino a €500 sul primo deposito della giornata</p>`,
-        emailText: "Bonus ricarica 50%"
-      },
-      {
-        day: 9,
-        title: "Giorno 9",
-        quote: "",
-        bodyHtml: `<p>Giornata Bonus Deposito Progressivo:<br>• Deposita €50 – Bonus base<br>• Deposita €1.000 – Bonus 20%<br>• Deposita €2.000+ – Bonus 25%</p>`,
-        emailText: "Bonus deposito progressivo"
-      },
-      {
-        day: 10,
-        title: "Giorno 10",
-        quote: "",
-        bodyHtml: `<p>50 Giri Gratis su qualsiasi slot natalizia</p>`,
-        emailText: "50 giri gratis"
-      },
-      {
-        day: 11,
-        title: "Giorno 11",
-        quote: "",
-        bodyHtml: `<p>15% di cashback giornaliero sulle perdite nette</p>`,
-        emailText: "Cashback 15%"
-      },
-      {
-        day: 12,
-        title: "Giorno 12",
-        quote: "",
-        bodyHtml: `<p>Campagna Punti Weekend<br>Ogni deposito di €50 = +10 punti</p>`,
-        emailText: "Campagna punti weekend"
-      },
-      {
-        day: 13,
-        title: "Giorno 13",
-        quote: "",
-        bodyHtml: `<p>Ottieni subito +5 punti per la campagna del weekend</p>`,
-        emailText: "+5 punti weekend"
-      },
-      {
-        day: 14,
-        title: "Giorno 14",
-        quote: "",
-        bodyHtml: `<p>10% di assicurazione su tutti i depositi di oggi</p>`,
-        emailText: "Assicurazione 10%"
-      },
-      {
-        day: 15,
-        title: "Giorno 15",
-        quote: "",
-        bodyHtml: `<p>Doppio Bonus Oggi:<br>• 1º deposito → Bonus 30%<br>• 2º deposito → Bonus 20%</p>`,
-        emailText: "Doppio bonus 30% + 20%"
-      },
-      {
-        day: 16,
-        title: "Giorno 16",
-        quote: "",
-        bodyHtml: `<p>Bonus / Scommessa Gratuita da €50</p>`,
-        emailText: "Bonus o scommessa gratuita da €50"
-      },
-      {
-        day: 17,
-        title: "Giorno 17",
-        quote: "",
-        bodyHtml: `<p>Missione:<br>Scommetti €1000 oggi → Ricevi un bonus di €100</p>`,
-        emailText: "Missione: scommetti €1000 → bonus €100"
-      },
-      {
-        day: 18,
-        title: "Giorno 18",
-        quote: "",
-        bodyHtml: `<p>Assicurazione Deposito 20%<br>Se oggi la fortuna non è dalla tua parte → domani ricevi indietro il 20%</p>`,
-        emailText: "Assicurazione deposito 20%"
-      },
-      {
-        day: 19,
-        title: "Giorno 19",
-        quote: "",
-        bodyHtml: `<p>Gara in Classifica (Ven–Dom)<br>Torneo di puntate con premi in denaro</p>`,
-        emailText: "Gara in classifica weekend"
-      },
-      {
-        day: 20,
-        title: "Giorno 20",
-        quote: "",
-        bodyHtml: `<p>Giornata Punti Torneo x2<br>Tutte le puntate di oggi valgono doppio</p>`,
-        emailText: "Punti torneo ×2"
-      },
-      {
-        day: 21,
-        title: "Giorno 21",
-        quote: "",
-        bodyHtml: `<p>Giornata Punti Torneo x2<br>Ogni deposito di oggi vale doppio</p>`,
-        emailText: "Punti ×2 (depositi)"
-      },
-      {
-        day: 22,
-        title: "Giorno 22",
-        quote: "",
-        bodyHtml: `<p>Bonus del 50% sul 2º deposito della giornata (fino a €500)</p>`,
-        emailText: "Bonus 50% sul 2º deposito"
-      },
-      {
-        day: 23,
-        title: "Giorno 23",
-        quote: "",
-        bodyHtml: `<p>Deposita almeno €200 oggi e il tuo cashback settimanale verrà triplicato</p>`,
-        emailText: "Cashback settimanale triplicato"
-      },
-      {
-        day: 24,
-        title: "Giorno 24",
-        quote: "",
-        bodyHtml: `<p>Invia una foto con un maglione di Natale e ricevi un Bonus Speciale fino a €300</p>`,
-        emailText: "Bonus speciale di Natale"
-      }
-    ];
+   const offersIt = [
+ {day:1,title:"Giorno 1",quote:"",bodyHtml:`<p>20 Giri Gratis</p>`,emailText:"20 Giri Gratis"},
+ {day:2,title:"Giorno 2",quote:"",bodyHtml:`<p>Missione:<br>Scommetti €500 → Ricevi €50 di Bonus</p>`,emailText:"€500 → €50"},
+ {day:3,title:"Giorno 3",quote:"",bodyHtml:`<p>Bonus del 30% sul primo deposito (fino a €200)</p>`,emailText:"30% Bonus"},
+ {day:4,title:"Giorno 4",quote:"",bodyHtml:`<p>10% di Cashback giornaliero</p>`,emailText:"10% Cashback"},
+ {day:5,title:"Giorno 5",quote:"",bodyHtml:`<p>Giorno Riffa – €20 = 1 Biglietto</p>`,emailText:"Giorno Riffa"},
+ {day:6,title:"Giorno 6",quote:"",bodyHtml:`<p>Bonus di €20</p>`,emailText:"€20 Bonus"},
+ {day:7,title:"Giorno 7",quote:"",bodyHtml:`<p>20 Giri Gratis – Book of Dead</p>`,emailText:"20 FS Book of Dead"},
+ {day:8,title:"Giorno 8",quote:"",bodyHtml:`<p>50% di Bonus sul deposito</p>`,emailText:"50% Bonus"},
+ {day:9,title:"Giorno 9",quote:"",bodyHtml:`<p>10 Giri Gratis – Gates of Olympus</p>`,emailText:"10 FS Gates"},
+ {day:10,title:"Giorno 10",quote:"",bodyHtml:`<p>Bonus di €10</p>`,emailText:"€10 Bonus"},
+ {day:11,title:"Giorno 11",quote:"",bodyHtml:`<p>Giorno Riffa</p>`,emailText:"Giorno Riffa"},
+ {day:12,title:"Giorno 12",quote:"",bodyHtml:`<p>20 Giri Gratis – Sweet Bonanza</p>`,emailText:"20 FS Sweet Bonanza"},
+ {day:13,title:"Giorno 13",quote:"",bodyHtml:`<p>Bonus del 30%</p>`,emailText:"30% Bonus"},
+ {day:14,title:"Giorno 14",quote:"",bodyHtml:`<p>10% di Cashback</p>`,emailText:"10% Cashback"},
+ {day:15,title:"Giorno 15",quote:"",bodyHtml:`<p>20 Giri Gratis – Big Bass Bonanza</p>`,emailText:"20 FS Big Bass"},
+ {day:16,title:"Giorno 16",quote:"",bodyHtml:`<p>Bonus di €10</p>`,emailText:"€10 Bonus"},
+ {day:17,title:"Giorno 17",quote:"",bodyHtml:`<p>10 Giri Gratis – The Dog House</p>`,emailText:"10 FS Dog House"},
+ {day:18,title:"Giorno 18",quote:"",bodyHtml:`<p>50% di Bonus</p>`,emailText:"50% Bonus"},
+ {day:19,title:"Giorno 19",quote:"",bodyHtml:`<p>20 Giri Gratis – Legacy of Dead</p>`,emailText:"20 FS Legacy"},
+ {day:20,title:"Giorno 20",quote:"",bodyHtml:`<p>Giorno Riffa</p>`,emailText:"Giorno Riffa"},
+ {day:21,title:"Giorno 21",quote:"",bodyHtml:`<p>Bonus di €20</p>`,emailText:"€20 Bonus"},
+ {day:22,title:"Giorno 22",quote:"",bodyHtml:`<p>20 Giri Gratis – Gates of Olympus</p>`,emailText:"20 FS Gates"},
+ {day:23,title:"Giorno 23",quote:"",bodyHtml:`<p>Bonus del 30%</p>`,emailText:"30% Bonus"},
+ {day:24,title:"Giorno 24",quote:"",bodyHtml:`<p>Foto con maglione natalizio → Bonus fino a €300</p>`,emailText:"Maglione natalizio → 300€"}
+];
 
     let offers = offersDe;
 
